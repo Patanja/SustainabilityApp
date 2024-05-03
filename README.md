@@ -42,7 +42,7 @@ Composer (for managing PHP dependencies)
 Steps
 Clone the repository:
 Copy code
-git clone https://github.com/Patanja/sustainability-app.git
+git clone https://github.com/Patanja/SustainabilityApp.git
 cd sustainability-app
 Install dependencies:
 Copy code
