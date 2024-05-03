@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.scene {
+    position: relative;
+    width: 100%; /* Set to the width of your images */
+    height: auto; /* Set to maintain aspect ratio, or set a fixed height */
+    overflow: hidden; /* Ensures anything outside this container is not shown */
+}
+
+.background-image {
+    width: 100%;
+    height: auto; /* Adjust based on your image and design needs */
+    display: block;
+}
+
+.hand-image {
+    position: absolute;
+    top: 0; /* Adjust if needed */
+    left: -50%; /* Start off-screen. Adjust based on hand image width */
+    width: auto; /* Adjust based on your image and design needs */
+    height: 100%; /* Adjust to match the scene's height or as necessary */
+    animation: slideIn 5s forwards; /* Adjust timing as needed */
+}
+
+@keyframes slideIn {
+    from { left: -50%; } /* Start from off-screen */
+    to { left: 0%; } /* End at the left edge of the scene */
+}
+.section {
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background */
+}
+
+/* Assuming you want to make the first section visible for testing */
+.section-one {
+    background-image: url('/SustainabilityApp/Home_page/images/forrest.jpg');
+    opacity: 1; /* Override to make visible */
+}
+
+.section-two {
+    background-image: url('/SustainabilityApp/images/hand.jpg');
+}
+
+.section-three {
+    background-image: url('/SustainabilityApp/images/lamp.jpg');
+}
+
+.section-four {
+    background-image: url('/SustainabilityApp/images/forrest.jpg');
+}
+
+.active-section {
+    opacity: 1; /* Ensure fully visible when active */
+}
+</style>
+
+</head>
+<body>
+
+    <div class="scene">
+        <img src="//SustainabilityApp/Home_page/images/lamp.jpg" alt="Background" class="background-image">
+        <img src="/SustainabilityApp/images/hand_only.png" alt="Hand" class="hand-image">
+    </div>
+
+<div class="section section-one"></div>
+<div class="section section-two"></div>
+<div class="section section-three"></div>
+<div class="section section-four"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+nav {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Align items vertically */
+    padding: 10px;
+    background-color: #b0e48e; /* Change background color to white */
+    font-family: 'Raleway', sans-serif;
+    z-index: 1000;
+}
+
+nav a {
+    color: rgb(18, 173, 44); /* Change link color to dark */
+    text-decoration: none;
+    padding: 10px 20px; /* Add padding */
+    border: 2px solid rgb(119, 199, 132); /* Add border */
+    border-radius: 5px; /* Add border radius */
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+    margin: 0 52px;
+
+}
+
+nav a:hover {
+    color: #fff; /* Change text color on hover */
+    background-color: #62aa6e; /* Change background color on hover */
+}
+
+#logo {
+    height: 60px; /* Adjust as needed */
+    margin-right: auto; /* Push the logo to the left */
+}
+
+body {
+    padding-top: 80px; /* Adjust this value as needed */
+}

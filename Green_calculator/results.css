@@ -1,0 +1,62 @@
+body {
+    background-image: url('../images_repository/login.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+#donationButton {
+    display: inline-block;
+    padding: 20px 30px;
+    background: linear-gradient(to right, #4CAF50, #8BC34A);
+    color: white;
+    border-radius: 50px;
+    border: 2px solid #101310;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#checkCertificate {
+    display: none;
+    
+    padding: 20px 30px;
+    background: linear-gradient(to right, #4CAF50, #8BC34A);
+    color: white;
+    border-radius: 50px;
+    border: 2px solid #101310;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+    }
+}

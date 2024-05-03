@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url('../images_repository/login.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.calculator-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Spacing between the calculator and the text */
+}
+
+.text-container {
+    flex: 2;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    margin-top: 200px;
+
+}
+
+.calculator {
+    margin-top: 100px;
+    width: auto;
+    max-width: 90%;
+    height: auto;
+    max-height: 90%; 
+}
+.button-common {
+    margin-top: 13px;
+    display: inline-block;
+    padding: 20px 30px;
+    background: linear-gradient(to right, #4CAF50, #8BC34A);
+    color: white;
+    border-radius: 5px;
+    border: 2px solid #4CAF50;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.button-common:hover {
+    background: linear-gradient(to right, #8BC34A, #4CAF50);
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+    }
+}

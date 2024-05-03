@@ -1,0 +1,253 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url('../images_repository/login.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+/* General Form Styling */
+form {
+    display: none; /* Initially hidden, shown via JavaScript */
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 200px auto 0; 
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+form h1, form h2 {
+    text-align: center; 
+    color: #111412; /* Dark grey for better readability */
+    margin-top: 0;
+   
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #bb0c0c;
+}
+
+/* Paragraph styles within the form */
+form p {
+    text-align: center; /* Center-align text for consistency */
+    margin: 0 0 20px; /* Adjust bottom margin for spacing */
+    color: #666; /* Lighter text color for paragraphs */
+}
+
+/* Container styling for each form section */
+form .form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Full width of the form */
+    margin-bottom: 30px; /* Increase bottom margin for better spacing */
+}
+
+/* Image styling within form sections */
+form .form-section img {
+    width: 100%; /* Full width of the section */
+    max-width: 500px; /* Max width to maintain image quality */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below image */
+}
+
+/* Label styling within form sections */
+form label {
+    font-weight: bold;
+    margin-bottom: 5px; /* Reduced bottom margin */
+    color: #444; /* Slightly darker color for labels */
+}
+
+/* Select element styling */
+form select {
+    width: 100%; 
+    max-width: 300px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    background-color: #fff; 
+    margin-bottom: 20px; 
+}
+
+/* Enhance visual feedback on user interaction */
+form select:hover,
+form select:focus {
+    border-color: #88aaff; 
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+.instructions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instructions img {
+    flex: 1 0 200px; 
+    max-width: 40%;
+    margin-top: 40px;
+}
+
+.text-content {
+    flex: 1 0 20px; 
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px; 
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 80%; 
+    max-width: 900px; 
+    text-align: center;
+    font-size: 1rem; 
+    margin: 20px 0; 
+    margin-right: 100px;
+}
+
+
+
+@media (max-width: 600px) {
+    .instructions {
+        flex-direction: column;
+    }
+
+    .instructions img, .text-content {
+        max-width: 100%; 
+        margin: 10px 0; 
+    }
+}
+
+.start-button {
+    display: inline-block;
+    padding: 20px 30px;
+    background: linear-gradient(to right, #4CAF50, #8BC34A);
+    color: white;
+    border-radius: 5px;
+    border: 2px solid #4CAF50;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.start-button:hover {
+    background: linear-gradient(to right, #8BC34A, #4CAF50);
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+    }
+}
+.calculate-button {
+    display: inline-block;
+    padding: 20px 30px;
+    background: linear-gradient(to right, #4CAF50, #8BC34A);
+    color: white;
+    border-radius: 5px;
+    border: 2px solid #4CAF50;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+.calculate-button:hover {
+    background: linear-gradient(to right, #8BC34A, #4CAF50);
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+    animation: pulse 2s infinite;
+}
+
+.aspect {
+    display: none;
+}
+
+
+
+.button-common {
+    display: inline-block;
+    padding: 20px 30px;
+    background: linear-gradient(to right, #4CAF50, #8BC34A);
+    color: white;
+    border-radius: 5px;
+    border: 2px solid #4CAF50;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.button-common:hover {
+    background: linear-gradient(to right, #8BC34A, #4CAF50);
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+    animation: pulse 2s infinite;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Full width of the form */
+    margin-bottom: 30px; 
+    text-align: center; 
+}
+
+.form-section img {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    margin-bottom: 20px; 
+}
+
+form label {
+    font-weight: bold;
+    font-size: 1.5rem; 
+    color: #444; 
+    margin-bottom: 10px; 
+}
+
